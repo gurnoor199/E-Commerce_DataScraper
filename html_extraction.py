@@ -24,7 +24,8 @@ MAX_PAGES = int(input(Style.BRIGHT + "No. of pages to scrap: "))
 wait = WebDriverWait(driver, 5)
 
 #Make the raw html data folder
-os.makedirs('RAW_HTML', exist_ok=True)
+FOLDER_NAME = 'RAW_HTML'
+os.makedirs(FOLDER_NAME, exist_ok=True)
 
 #Now the html extraction begins
 try:
